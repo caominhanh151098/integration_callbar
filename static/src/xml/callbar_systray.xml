@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+  <t t-name="systray_icon" owl="1">
+    <div class='callbar-toggle' style="display: flex; width: 30px; align-items: center; justify-content: center; cursor: pointer;">
+      <i t-if="!close.value"
+        class="fa fa-lg fa-phone"
+        title="Call"
+        t-on-click="toggleCallbar"
+      />
+      <i t-if="close.value"
+        class="fa fa-lg fa-phone text-white"
+        title="Call"
+        t-on-click="toggleCallbar"
+      />
+    </div>
+  </t>
+</templates>
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <t t-name="callbar_antbuddy.CallbarContainer">
+        <div id="callbar_container" class="iframe-dialer-antbuddy_form" t-att-hidden="close.value">
+            <div class="header-iframe-dialer-antbuddy">
+                <span>Antbuddy</span>
+                <span t-on-click='toggleCallbar' >
+                    <i class="fa fa-close ml" id="callbar_toggle_button" role="button" tabindex="0"></i>
+                </span>
+            </div>
+            <iframe class="iframe-dialer-antbuddy" id="iframe-dialer" t-att-src="src" allow="camera; microphone"></iframe>
+        </div>
+    </t>
+</odoo>

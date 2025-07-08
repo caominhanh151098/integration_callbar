@@ -1,0 +1,10 @@
+<odoo>
+  <record id="action_download_callbar_config" model="ir.actions.act_url">
+    <field name="name">Get Callbar Config</field>
+    <field name="url">/callbar/get-config</field>
+    <field name="target">self</field>
+  </record>
+
+
+  <menuitem id="menu_callbar_config_download" name="Get Callbar Config" parent="contacts.res_partner_menu_config" action="action_download_callbar_config"/>
+</odoo>
